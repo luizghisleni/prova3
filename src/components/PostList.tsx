@@ -26,6 +26,9 @@ const PostList = () => {
     fetchPosts();
   }, []);
 
+  if (loading) return <div>Carregando...</div>;
+  if (error) return <div>{error}</div>;
+
   return (
     <List>
       {posts.map((post) => (
