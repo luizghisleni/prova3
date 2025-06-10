@@ -32,7 +32,7 @@ const PostDetail = () => {
   }, [id]);
 
   if (error) return <div>{error}</div>;
-  if (!post || !user) return null; // Retorna vazio enquanto carrega
+  if (!post || !user) return null;
 
   return (
     <Paper elevation={3} sx={{ p: 3 }}>
